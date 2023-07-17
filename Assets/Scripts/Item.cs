@@ -103,11 +103,7 @@ namespace DodgeBomb
                         PlayMain.Inst.UpdateLife(-1);
                         break;
                     case TYPE.Coin:
-                        PlayMain.Inst.UpdateScore(10);
-                        GameObject obj = Instantiate(Resources.Load("Prefabs/UI/ScoreNumber"), 
-                            PlayMain.Inst.myScoreUITransform) as GameObject; // PlayMain.Inst.myScoreUITransform 자식으로 넣어줌
-                        obj.transform.position = Camera.main.WorldToScreenPoint(transform.position);
-                        obj.GetComponent<ScoreNumber>().Initialize(10);
+                        PlayMain.Inst.UpdateScore(10);                      
                         break;
                     case TYPE.Poison:
                         PlayMain.Inst.UpdateLife(-1);
