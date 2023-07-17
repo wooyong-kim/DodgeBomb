@@ -51,6 +51,7 @@ namespace DodgeBomb
                     // myDropper.SetActive(false); // Dropper 비활성화
                     myScoreUITransform.gameObject.SetActive(false);
                     myLife.Life = 3;
+                    myScore.Score = 0;
                     StartMenu.SetActive(true);
                     RetryMenu.SetActive(false);
                     break;
